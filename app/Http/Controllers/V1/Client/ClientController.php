@@ -183,11 +183,15 @@ class ClientController extends Controller
         ]));
         if ($resetDay) {
             array_push($servers, array_merge($servers[0], [
-                'name' => "流量重置：剩余{$resetDay}天，剩余流量：{$remainingTraffic}",
+                'name' => "流量重置：剩余{$resetDay}天",
             ]));
         }
         array_push($servers, array_merge($servers[0], [
-            'name' => "上次更新时间：{$currentTime}",
+            'name' => "剩余流量：{$remainingTraffic}",
+        ]));
+
+        array_push($servers, array_merge($servers[0], [
+            'name' => "更新时间：{$currentTime}",
         ]));
         array_push($servers, array_merge($servers[0], [
             'name' => "----- 联系我们 -----",
@@ -199,7 +203,7 @@ class ClientController extends Controller
             'name' => "邮箱：service@budingcat.xyz",
         ]));
         array_push($servers, array_merge($servers[0], [
-            'name' => "FAQ：如遇到节点大量失败请尝试更新订阅",
+            'name' => "如遇节点大量失败请更新订阅",
         ]));
     }
 

@@ -176,7 +176,7 @@ class ClientController extends Controller
             'name' => "----- 账号信息 -----",
         ]));
         array_push($servers, array_merge($servers[0], [
-            'name' => "登陆账号：{$userEmail}",
+            'name' => "登录账号：{$userEmail}",
         ]));
         array_push($servers, array_merge($servers[0], [
             'name' => "{$planName}：{$expiredDate}",

@@ -197,7 +197,7 @@ class ClientController extends Controller
             'name' => "----- 联系我们 -----",
         ]));
         array_push($servers, array_merge($servers[0], [
-            'name' => "官网：budingcat.top",
+            'name' => "官网：service@team.budingcat.xyz",
         ]));
         array_push($servers, array_merge($servers[0], [
             'name' => "邮箱：service@budingcat.xyz",
